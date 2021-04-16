@@ -1,0 +1,139 @@
+.owl-carousel{
+    float: left;
+    
+}
+
+.owl-carousel,
+.owl-stage-outer,
+.owl-stage,
+.owl-item,
+.owl-lazy{
+    height: 100%;
+    position: relative;
+}
+
+.owl-lazy{
+    padding: 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.owl-nav{
+    position: absolute;
+    top: 50%;
+    transform: translateY(50%);
+    -webkit-transform: translateY(-50%);
+    width: 100%;
+}
+
+.owl-prev,
+.owl-next{
+    position: absolute;
+    background: rgba(15, 57, 73, 0.7);
+    padding: 20px 15px;
+    color: #fff;
+    top: 50%;
+    transform: translateY(50%);
+    -webkit-transform: translateY(-50%);
+    transition: 0.3s;
+}
+
+.owl-prev:hover,
+.owl-next:hover{
+    background: #f47933;
+}
+
+.owl-prev{
+    left: 0;
+    border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
+}
+
+.owl-next{
+    right: 0;
+    border-radius: 5px 0 0 5px;
+    -webkit-border-radius: 5px 0 0 5px;
+}
+
+.owl-dots{
+    width: 100%;
+    position: absolute;
+    bottom: 15px;
+    text-align: center;
+}
+
+.owl-dot{
+    display: inline-block;
+    width: 35px;
+    height: 10px;
+    margin: 5px;
+    background: #fff;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.owl-dot.active{
+    background: #f47933;
+}
+
+/* Carousel Principal */
+
+#carousel_principal{
+    height: calc(100% - 65px);
+}
+
+.carousel_content{
+    text-align: center;
+    background: rgba(244, 121, 51, 0.8);
+    font-size: 1rem;
+    color: #fff;
+    position: absolute;
+    padding: 10px;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    max-width: 600px;
+}
+
+.carousel_content p strong{
+    font-size: 1.4rem;
+}
+
+/* Carousel Testemunhas */
+#carousel_testemunhas .owl-prev,
+#carousel_testemunhas .owl-next{
+    padding: 5px 12px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+#carousel_testemunhas .owl-prev{
+    left: -50px;
+}
+#carousel_testemunhas .owl-next{
+    right: -50px;
+}
+
+#carousel_testemunhas .owl-dots{
+    position: relative;
+    bottom: -10px;
+}
+/* Carousel portfolio */
+.carousel_portfolio{
+    width: 100%;
+    height: 320px;
+}
+.carousel_portfolio .owl-prev,
+.carousel_portfolio .owl-next{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 11px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.carousel_portfolio .carousel_content{
+    display: none;
+}
